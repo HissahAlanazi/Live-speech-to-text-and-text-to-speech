@@ -65,7 +65,7 @@ def read_audio(ws, timeout):
     over the websocket wire.
 
     """
-    with open('./speech.mp4', 'wb') as audio_file:
+    with open('./speech.mp3', 'wb') as audio_file:
 
         res = tts.synthesize('Hello word', accept='audio/mp3', voice='en-GB_JamesV3Voice').get_result()
 
@@ -90,9 +90,9 @@ def read_audio(ws, timeout):
 
     text [' Hello, I am Hissah Alanazi Bachelor Computer Sciences graduate,from Princess Nourah bint Abdulrahman University i am graduate 2020 year, looking for an opportunity to work in an organization that ,I can improve and develop my professional and technical skills and proven what I have learned I am currently training at the Smart Method company to gain new skills and experience']
 
-    with open('./SpeechToText.mp4', 'wb') as audio_file:
+    with open('./SpeechToText.mp3', 'wb') as audio_file:
 
-       res = tts.synthesize(text, accept='audio/mp4', voice='en-GB_JamesV3Voice').get_result()
+       res = tts.synthesize(text, accept='audio/mp3', voice='en-GB_JamesV3Voice').get_result()
 
        audio_file.write(res.content)
 
