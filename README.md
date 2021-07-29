@@ -2,7 +2,12 @@
 
  Watson Streaming Speech to Text Example
  =====================================
+ 
+ ## Built With
 
+- Python language
+- Speech to text IBM WATSON
+- Text to Speech IBM WATSON
 
 The following is an example of using Watson to real time transcribe                                                                                     
 from Speech to Text using the websockets streaming API.                                                                                                                      
