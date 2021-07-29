@@ -1,7 +1,7 @@
 # IBM-Watson-to-convert-speech-to-text-and-text-to-speech-Using-python-language
-=========================================
+=====================================
  Watson Streaming Speech to Text Example
-=========================================
+=====================================
 
 The following is an example of using Watson to real time transcribe                                                                                     
 from Speech to Text using the websockets streaming API.                                                                                                                      
@@ -78,9 +78,9 @@ hi now I'm doing a test to converting speech to text
 hi now I'm doing a test to converting speech to text                                                                                                      
 * done recording                                                                                                       
 
-=========================================                                                                                                                                    
+=====================================                                                                                                                                    
     Text To Speech
-=========================================                                                                                                                              
+=====================================                                                                                                                              
 
 You'll need to sign up for the `Watson STT service`_. ,                                                                                            
 IBM Cloud accounts get 500 minutes / month free.                                                                                                      
