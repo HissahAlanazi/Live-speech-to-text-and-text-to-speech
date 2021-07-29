@@ -1,4 +1,4 @@
-
+IBM-Watson-to-convert-speech-to-text-and text-to-speech-Using-python-language
 =========================================
  Watson Streaming Speech to Text Example
 =========================================
@@ -85,6 +85,6 @@ hi now I'm doing a test to converting speech to text
 You'll need to sign up for the `Watson STT service`_. ,
 IBM Cloud accounts get 500 minutes / month free.
 
-In order to connect to the Watson streaming server you need an API Key, and url and to
+In order to connect to the Watson streaming server you need an API Key, and URL and to
 specify which region your text to speech service was provisioned in (there are
 different gateways per region). You can find these on your IBM Cloud console for the service you have added.
