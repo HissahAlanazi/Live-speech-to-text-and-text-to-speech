@@ -84,6 +84,10 @@ hi now I'm doing a test to converting speech to text
 hi now I'm doing a test to converting speech to text                                                                                                      
 * done recording                                                                                                       
 
+<img width="960" alt="FinalRecord" src="https://user-images.githubusercontent.com/85851678/127584002-7a87d58e-4868-4f74-bb12-a7bcfafd7305.png">
+
+<img width="960" alt="FinalRecordd" src="https://user-images.githubusercontent.com/85851678/127584103-b2784a2c-3de4-42d6-8e0f-60e9299617e1.png">
+
                                                                                                                                     
 Text To Speech
 ==============================================
