@@ -28,10 +28,14 @@ from websocket._abnf import ABNF
 from ibm_watson import TextToSpeechV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
+apikey = 'OY-_uGlJh33xxMqVg1eRf6WJ-UKjh5fueAThUOaDn3mF'
+url = 'https://api.us-south.text-to-speech.watson.cloud.ibm.com/instances/46901b6d-cc01-4af3-b25e-268cc3affcc3'
 
-authenticator = IAMAuthenticator('Eox9S6h-S4GAcErxuoCPcLp9AzxYYdr4S_bGcJVu78ly')
+# Setup Service
+authenticator = IAMAuthenticator(apikey)
 tts = TextToSpeechV1(authenticator=authenticator)
-tts.set_service_url('https://api.eu-gb.text-to-speech.watson.cloud.ibm.com/instances/3f3d2013-22ff-4c93-9889-bf0851522cbb')
+tts.set_service_url(url)
+
 
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
@@ -65,36 +69,20 @@ def read_audio(ws, timeout):
     over the websocket wire.
 
     """
-    with open('./speech.mp3', 'wb') as audio_file:
-
-        res = tts.synthesize('Hello word', accept='audio/mp3', voice='en-GB_JamesV3Voice').get_result()
-
-        audio_file.write(res.content)
-
-
-    with open('SpeechToText.txt', 'r') as f:
+   
+    
+    with open('TESTT.txt', 'r') as f:
 
         text = f.readlines()
-
-        text[
-            'Hello, I am Hissah Alanazi, \n',
-            'Bachelor Computer Sciences graduate,from Princess Nourah bint Abdulrahman University i am graduate 2020 year,\n ',
-            'looking for an opportunity to work in an organization that\n',
-            ',I can improve and develop my professional and technical skills and proven what I have learned\n',
-            'I am currently training at the Smart Method company to gain new skills and experience\n'
-            ]
 
     text = [line.replace('\n', '') for line in text]
 
     text = ''.join(str(line) for line in text)
 
-    text [' Hello, I am Hissah Alanazi Bachelor Computer Sciences graduate,from Princess Nourah bint Abdulrahman University i am graduate 2020 year, looking for an opportunity to work in an organization that ,I can improve and develop my professional and technical skills and proven what I have learned I am currently training at the Smart Method company to gain new skills and experience']
-
-    with open('./SpeechToText.mp3', 'wb') as audio_file:
-
-       res = tts.synthesize(text, accept='audio/mp3', voice='en-GB_JamesV3Voice').get_result()
-
-       audio_file.write(res.content)
+    with open('./TESTT.mp3', 'wb') as audio_file:
+        res = tts.synthesize(text, accept='audio/mp3', voice='en-US_AllisonV3Voice').get_result()
+        audio_file.write(res.content)
+    
 
 
 
