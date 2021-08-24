@@ -98,3 +98,8 @@ IBM Cloud accounts get 500 minutes / month free.
 In order to connect to the Watson streaming server you need an API Key, and URL and to                                                                                     
 specify which region your text to speech service was provisioned in (there are                                                                                                      
 different gateways per region). You can find these on your IBM Cloud console for the service you have added.                                                                                                      
+## Sources 
+- [smart methods youtube video](https://www.youtube.com/watch?v=Z_N2aAHfiGU&t=5229s)
+- https://www.youtube.com/watch?v=8k8S5ruFAUs&t=602s
+- https://www.youtube.com/watch?v=A9_0OgW1LZU&t=310s
+- https://www.youtube.com/watch?v=YCyuZM454_I&t=849s
